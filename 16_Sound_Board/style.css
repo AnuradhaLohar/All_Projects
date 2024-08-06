@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(161, 98, 220);
+    font-size:'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.btn{
+    background-color:  rebeccapurple;
+    border:0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 25px 45px;
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn:focus{
+    outline: 0;
+}
