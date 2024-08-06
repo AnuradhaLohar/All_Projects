@@ -1,4 +1,4 @@
-nav {
+nav1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -9,7 +9,7 @@ nav {
     background-color: #eee;
   }
   
-  nav a {
+  nav1 a {
     display: inline-block;
     min-width: 9rem;
     padding: 0.5rem;
@@ -20,7 +20,7 @@ nav {
     color: #1b1b1b;
   }
   
-  nav a[aria-current='page'] {
+  nav1 a[aria-current='page'] {
     color: #000;
     background-color: #d4d4d4;
   }

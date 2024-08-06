@@ -7,14 +7,14 @@ const c=document.querySelector('.circle-container1')
 
 
 opend.addEventListener('click',()=>{
-    containers.classList.add('show-nav')
+    containers.classList.add('show-nav1')
     c.classList.add('hide')
     c2.classList.remove('hide')
    
 })
 
 closed.addEventListener('click',()=>{
-    containers.classList.remove('show-nav')
+    containers.classList.remove('show-nav1')
     console.log("clicked");
     c.classList.remove('hide')
     c2.classList.add('hide')

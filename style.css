@@ -7,9 +7,10 @@
     font-family: system-ui, sans-serif;
     color: black;
     background-color: white;
+    margin-top: 100px;
   }
   
-  nav {
+  nav1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -18,9 +19,14 @@
     gap: 0.5rem;
     border-bottom: solid 1px #aaa;
     background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
   }
   
-  nav a {
+  nav1 a {
     display: inline-block;
     min-width: 9rem;
     padding: 0.5rem;
@@ -31,7 +37,7 @@
     color: #1b1b1b;
   }
   
-  nav a[aria-current='page'] {
+  nav1 a[aria-current='page'] {
     color: #000;
     background-color: #d4d4d4;
   }

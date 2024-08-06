@@ -2,20 +2,26 @@
     box-sizing: border-box;
 }
 
+nav1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 body{
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    
+    height: 100vh;
     
 }
 
 
 .container{
  text-align: center;
-
 
  
 }

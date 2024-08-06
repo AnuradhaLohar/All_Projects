@@ -89,7 +89,7 @@ html {
     font-size: 16px;
     text-align: center;
   }
-  nav {
+  nav1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -100,7 +100,7 @@ html {
     background-color: #eee;
   }
   
-  nav a {
+  nav1 a {
     display: inline-block;
     min-width: 9rem;
     padding: 0.5rem;
@@ -111,7 +111,7 @@ html {
     color: #1b1b1b;
   }
   
-  nav a[aria-current='page'] {
+  nav1 a[aria-current='page'] {
     color: #000;
     background-color: #d4d4d4;
   }
