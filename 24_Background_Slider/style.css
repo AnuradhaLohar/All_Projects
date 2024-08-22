@@ -9,8 +9,9 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
     margin: 0;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     transition: 0.4s;
 }
@@ -27,7 +28,7 @@ body::before{
 }
 
 .slider-container{
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23);
     height: 70vh;
     width: 70vw;
     position:relative;
@@ -36,8 +37,8 @@ body::before{
 
 .slide{
     opacity: 0;
-    width:100vh;
-    height: 100vw;
+    width:100vw;
+    height: 100vh;
     background-position: center center;
     background-size: cover;
     position: absolute;
