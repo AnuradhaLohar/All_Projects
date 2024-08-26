@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(70, 130, 180);
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.empty{
+    height: 120px;
+    width: 150px;
+    margin: 10px;
+    margin-bottom: 0;
+    border: solid 3px black;
+    background: white;
+}
+
+.fill{
+    background-image: url(imges/photo3.jpg);
+    height: 115px;
+    width: 145px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.hold{
+    border: solid 5px #ccc;
+}
+
+.hovered{
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+}
+
+@media (max-width:800px) {
+    body{
+        flex-direction: column;
+    }
+}
+
