@@ -1,6 +1,4 @@
 
-
-
 .div-main-container{
     display: grid;
     grid-template-columns:1fr 1fr 1fr ;
@@ -10,6 +8,8 @@
     background-color: white;
    
 }
+
+
 @media(max-width:850px){
     .div-main-container{
         grid-template-columns:1fr 1fr ;
