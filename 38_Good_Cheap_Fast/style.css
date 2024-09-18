@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto, sans-serif;
+
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.toggle-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 0;
+    width: 200px;
+}
+.toggle{
+   visibility: hidden;
+}
+.label{
+    background-color: rgb(205, 205, 205);
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+    margin: 0 12px;
+    font-weight: none;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.ball{
+    height: 34px;
+    width: 34px;
+    background-color: white;
+    border-radius: 50px;
+    transition: transform linear 0.3s;
+}
+
+.toggle:checked + .label{
+    background-color: rgb(139, 65, 155);
+}
+
+.toggle:checked + .label .ball{
+    transform: translateX(113%);
+}
+
