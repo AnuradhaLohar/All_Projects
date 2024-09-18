@@ -29,6 +29,7 @@
   .projects {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
   
   .project-link {
@@ -43,6 +44,10 @@
     font-weight: 500;
   }
   
+  .project-link:hover{
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+  }
  
   .bi-sun{
     display: none;
