@@ -1,65 +1,74 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    color: black;
-    background-color: white;
-    margin-top: 50px;
-    
-  }
+  box-sizing: border-box;
+}
 
-  h1{
-    text-align: center;
-    font-style:italic;
-  }
-  
- 
-  main {
-    padding: 1rem;
-  }
-  
-  h1 {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .project-link {
-    background-color: #fbfbfb;
-    padding: 10px 30px;
-    border-radius: 8px;
-    color: #212121;
-    text-decoration: none;
-    border: 2px solid #ffffff;
-    margin-top: 5px;
-    font-style:italic;
-    font-weight: 500;
-  }
-  
-  .project-link:hover{
-    background-color: #f5f5f5;
-    transform: translateY(-2px);
-  }
- 
-  .bi-sun{
-    display: none;
-  }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated for better font rendering */
+  color: #f0f0f0; /* Softer white for readability */
+  background-color: #141010; /* Darker background for more contrast */
+  padding-top: 60px;
+}
 
-  .bi{
-    font-size: 20px;
-    padding: 4px 8px;
-    background-color: white;
-    color: black;
-    border-radius: 50px;
-    position: absolute;
-    top: 80px;
-    right: 50px;
-  }
+/* Button/Icon Styling */
+.bi {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: #fff;
+  color: #121212; /* Consistent with the background */
+  padding: 5px 9px 5px 9px ; /* More padding for a better look */
+  font-size: 24px;
+  border-radius: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+.bi-moon {
+  background-color: #000; /* Subtle hover effect */
+  color: #f0f0f0;
+}
+
+/* Hidden icon styling */
+.bi-sun {
+  display: none;
+}
+
+/* Main Content */
+main {
+  padding: 2rem; /* More spacious padding */
+  max-width: 1200px;
+  margin: 0 auto; /* Center content */
+}
+
+/* Headings */
+h1 {
+  font-weight: 700;
+  font-size: 2rem; /* Larger heading */
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+/* Projects Section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between project links */
+}
+
+.project-link {
+  background-color: #fff;
+  padding: 12px 30px;
+  border-radius: 10px; /* Softer corners */
+  color: #212121;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  font-style: italic;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-2px) scale(1.1); /* Subtle lift on hover */
+}
