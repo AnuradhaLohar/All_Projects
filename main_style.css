@@ -8,6 +8,7 @@ body {
   color: #f0f0f0; /* Softer white for readability */
   background-color: #141010; /* Darker background for more contrast */
   padding-top: 60px;
+  overflow-x: hidden;
 }
 
 /* Button/Icon Styling */
