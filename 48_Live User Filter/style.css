@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: white;
+    width: 350px;
+    margin-top: 50px;
+}
+
+.title{
+    margin: 0;
+}
+
+.subtitle {
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+
+.header{
+    background-color: #3E57DB;
+    color: white;
+    padding: 30px 20px;    
+}
+
+.header input{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    padding: 14px 15px;
+    width: 100%;
+}
+
+.header input:focus{
+    outline: none;
+}
+
+.user-list{
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.user-list li {
+    display: flex;
+    padding: 20px 20px;
+    align-items: center; /* Aligns the image and user-info vertically */
+}
+
+.user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+}
+.user-info {
+    margin-top: -14px;
+}
+.user-list .user-info {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensures user info text is vertically centered */
+}
+
+.user-list .user-info h4 {
+    margin: 0;
+}
+
+.user-list .user-info p {
+    font-size: 14px;
+    margin:  0;
+    margin-top: -12px;
+}
+
+.user-list li:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.user-list li.hide {
+    display: none;
+}
