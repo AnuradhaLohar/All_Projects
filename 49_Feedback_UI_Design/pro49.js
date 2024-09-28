@@ -16,7 +16,8 @@ ratings.forEach(rating => {
     })
 })
 
-submitBtn.addEventListener('click' , () => {
+
+submitBtn.addEventListener('click' ,() => {
     console.log(selectedRating);
 
     panel.innerHTML = `
