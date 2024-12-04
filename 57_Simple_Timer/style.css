@@ -1,0 +1,102 @@
+:root {
+  --degrees: 0deg
+}
+
+
+body {
+  background-color: #374151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #1a1a1a;
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  max-width: 24rem;
+ 
+
+}
+
+h1 {
+  font-size: 2.25rem;
+  text-align: center;
+  color: white;
+}
+
+.timer-circle {
+  background: conic-gradient(transparent 0deg, transparent var(--degrees), white var(--degrees), white 360deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  margin: 2.5rem auto;
+  border-radius: 9999px;
+  position: relative;
+}
+
+#timer {
+  color: #bfdbfe;
+  position: relative;
+  font-size: 3rem;
+  z-index: 10;
+}
+
+.inner-circle {
+  width: calc(100% - 4px);
+  aspect-ratio: 1/1;
+  background-color: #2d3748;
+  border-radius: 100%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+
+}
+
+.hand {
+  height: 50%;
+  position: absolute;
+  top: 0;
+  transform-origin: bottom center;
+  transform: rotate(var(--degrees));
+}
+
+.marker {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+.button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #63b3ed;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+}
+
+
+#play.custom-bg{
+  background-color: #4caf50;
+}
